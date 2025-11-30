@@ -40,7 +40,8 @@ jobs:
 
   # Pipeline pour push sur dev - Build Complet
   dev-pipeline:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+    dev-pipeline:
+  if: github.event_name == 'push'
     name: Dev Pipeline - Full Build
     runs-on: ubuntu-latest
     
