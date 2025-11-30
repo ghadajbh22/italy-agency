@@ -1,0 +1,193 @@
+.a-propos {
+  padding: 100px 0 80px;
+  background: #f8f9fa;
+}
+
+.a-propos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* En-tête */
+.a-propos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.a-propos-header h1 {
+  font-size: 3rem;
+  color: #2c5aa0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.a-propos-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Section Notre Histoire */
+.a-propos-section {
+  margin-bottom: 80px;
+}
+
+.a-propos-content h2 {
+  font-size: 2.2rem;
+  color: #2c5aa0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.a-propos-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.a-propos-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Le reste du CSS reste identique pour les sections impact et valeurs */
+.impact-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 80px;
+}
+
+.impact-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c5aa0;
+  margin-bottom: 3rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 2rem 1rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Section Valeurs */
+.values-section {
+  margin-bottom: 60px;
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c5aa0;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #2c5aa0;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .a-propos {
+    padding: 80px 0 60px;
+  }
+
+  .a-propos-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .a-propos-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .a-propos-content h2,
+  .impact-section h2,
+  .values-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .impact-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item {
+    padding: 1.5rem 1rem;
+  }
+}
